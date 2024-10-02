@@ -1,0 +1,101 @@
+<!--TASK 2 calculator.html -->
+<html>
+	<head>
+		<title> CALCULATOR </title>
+	<style>
+		
+		
+		#container{
+				background-color:#f2edeb;
+				display: flex;
+ 				align-items: center;
+ 				justify-content: center;
+			
+		}
+
+		
+		#title{
+		text-align: center;
+		text-decoration:underline 5px solid;
+		padding-top:50px;
+		padding-bottom:52px;
+		text-transform: uppercase;
+		}
+		
+		
+		
+		#text
+		{
+			border: 0.5rem solid;
+			height:15vh;
+			width:44vh;
+			font-size: xx-large;
+			text-align:right;
+			padding-top:75px;
+			cursor: not-allowed;
+			box-shadow: 10px 5px 49px #e6e8b5;
+		}
+		
+		._but{
+			
+			margin:3px;
+			color:red;
+			height:10vh;
+			width:10vh;
+			font-size: x-large;
+			cursor: grab;
+			box-shadow: 10px 5px 49px #e6e8b5;
+			
+		}	
+		#clear{
+			margin-top :10px;
+			margin-left:3px;
+			color:red;
+			height:10vh;
+			width:10vh;
+			font-size: x-large;
+			box-shadow: 10px 5px 49px #e6e8b5;
+			margin-bottom:90px;
+		}	
+		
+	</style>	
+	</head>
+	<body>
+		
+	<div id="container">		
+	<form name="calc">
+		<h1 id="title">Calculator</h1>
+		<input id="text" type="text" name="results" readonly > <br>
+		
+		<input class="_but" type="button" value="7" onclick="calc.results.value = calc.results.value + '7'">
+		<input class="_but" type="button" value="8" onclick="calc.results.value = calc.results.value + '8'">
+		<input class="_but" type="button" value="9" onclick="calc.results.value = calc.results.value + '9'">
+		<input class="_but" type="button" value="*" onclick="calc.results.value = calc.results.value + '*'">
+		<br>
+		
+		<input class="_but" type="button" value="4" onclick="calc.results.value = calc.results.value + '4'">
+		<input class="_but" type="button" value="5" onclick="calc.results.value = calc.results.value + '5'">
+		<input class="_but" type="button" value="6" onclick="calc.results.value = calc.results.value + '6'">
+		<input class="_but" type="button" value="-" onclick="calc.results.value = calc.results.value + '-'">
+		<br>
+		
+		<input class="_but" type="button" value="1" onclick="calc.results.value = calc.results.value + '1'">
+		<input class="_but" type="button" value="2" onclick="calc.results.value = calc.results.value + '2'">
+		<input class="_but" type="button" value="3" onclick="calc.results.value = calc.results.value + '3'">
+		<input class="_but" type="button" value="+" onclick="calc.results.value = calc.results.value + '+'">
+		
+		<br>
+		
+
+		
+		<input class="_but" type="button" value="." onclick="calc.results.value = calc.results.value + '.'">
+		<input class="_but" type="button" value="0" onclick="calc.results.value = calc.results.value + '0'">
+		<input class="_but" type="button" value="=" onclick="calc.results.value = eval(calc.results.value)">
+		<input class="_but" type="button" value="/" onclick="calc.results.value = calc.results.value + '/'">
+		<br>
+		<input id="clear" type="button" value="C" onclick="calc.results.value =''">
+		
+</form>
+	</div>	
+	</body>	
+</html>	
